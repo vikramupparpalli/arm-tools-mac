@@ -6,17 +6,17 @@ include $(arm_tools_current_path)/mc/makecommon.mk
 arm_tools_current_path_windows_slashes:=$(subst /,\,$(arm_tools_current_path))
 
 # Required System Environment Variables
-export PATH:=$(arm_tools_current_path_windows_slashes)\arm-gnu-toolchain\bin;$(arm_tools_current_path_windows_slashes)\shellutils;$(PATH)
+export PATH:=$(arm_tools_current_path)/arm-gnu-toolchain/bin;$(PATH)
 
 # Commonly Used Variables
-export ASSEMBLER:=$(arm_tools_current_path_windows_slashes)\arm-gnu-toolchain\bin\arm-none-eabi-as
-export COMPILER:=$(arm_tools_current_path_windows_slashes)\arm-gnu-toolchain\bin\arm-none-eabi-gcc
-export LINKER:=$(arm_tools_current_path_windows_slashes)\arm-gnu-toolchain\bin\arm-none-eabi-gcc
-export ARCHIVER:=$(arm_tools_current_path_windows_slashes)\arm-gnu-toolchain\bin\arm-none-eabi-ar
-export OBJCOPY:=$(arm_tools_current_path_windows_slashes)\arm-gnu-toolchain\bin\arm-none-eabi-objcopy
-export SIZE:=$(arm_tools_current_path_windows_slashes)\arm-gnu-toolchain\bin\arm-none-eabi-size
+export ASSEMBLER:=$(arm_tools_current_path)/arm-gnu-toolchain/bin/arm-none-eabi-as
+export COMPILER:=$(arm_tools_current_path)/arm-gnu-toolchain/bin/arm-none-eabi-gcc
+export LINKER:=$(arm_tools_current_path)/arm-gnu-toolchain/bin/arm-none-eabi-gcc
+export ARCHIVER:=$(arm_tools_current_path)/arm-gnu-toolchain/bin/arm-none-eabi-ar
+export OBJCOPY:=$(arm_tools_current_path)/arm-gnu-toolchain/bin/arm-none-eabi-objcopy
+export SIZE:=$(arm_tools_current_path)/arm-gnu-toolchain/bin/arm-none-eabi-size
 
-ZIP_TOOL:=$(arm_tools_current_path_windows_slashes)\zip\7zip.exe
+ZIP_TOOL:=$(arm_tools_current_path)\zip\7zip.exe
 LUA_SREC_TO_IHEX:=$(arm_tools_current_path)/lstih/lua-srec-to-intel-hex.lua
 
 # Now set up the include directories
