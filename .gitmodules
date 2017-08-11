@@ -1,6 +1,1 @@
-[submodule "lstih"]
-	path = lstih
-	url = https://github.com/geappliances/applcommon.lua-srec-to-intel-hex.git
-[submodule "mc"]
-	path = mc
-	url = https://github.com/geappliances/applcommon.makecommon.git
+
