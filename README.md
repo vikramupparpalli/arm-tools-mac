@@ -1,1 +1,1 @@
-#ARM Tools Mac
+#GNU ARM Binaries for Mac-OSX
